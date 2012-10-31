@@ -33,7 +33,7 @@ class Fql
 								  
 end
 
-fql = Fql.new("AAACEdEose0cBAIRWOW3VAkXEFZBZCIf5PnWZCkZBH3ItL4eysrAcjuIBtB7TMf5fVLxmhBYkBpOCQjFfHa6vRybRJNZAC22NlQZBZBhT63osQZDZD")
+fql = Fql.new("your_token")
 							
  response = fql.query(
  "SELECT uid, name, pic_square
