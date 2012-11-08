@@ -36,8 +36,10 @@ end
 fql = Fql.new("AAACEdEose0cBAIRWOW3VAkXEFZBZCIf5PnWZCkZBH3ItL4eysrAcjuIBtB7TMf5fVLxmhBYkBpOCQjFfHa6vRybRJNZAC22NlQZBZBhT63osQZDZD")
 							
  response = fql.query(
- "SELECT uid, name, pic_square
- FROM user WHERE uid = me()")
+ 	 "SELECT uid2 from friend where uid1 = me()")
 
-# OR uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) limit 2,1")
+=begin
+	 "SELECT uid, name, pic_square
+ FROM user WHERE uid = me()")
+=end
 puts response.inspect
